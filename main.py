@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 import time
 from pypresence import Presence
-from open import open
 
 bot = commands.Bot(command_prefix='*', self_bot=True)
 rpc = Presence(client_id=)
@@ -30,5 +29,4 @@ async def ping(ctx):
     await ctx.message.delete()
     await (await ctx.send("...")).edit(content=f"`{round((time.monotonic() - time.monotonic()) * 1000)} ms`")
 
-open()
 bot.run('')
